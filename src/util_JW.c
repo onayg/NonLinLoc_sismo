@@ -73,8 +73,13 @@ void copy_file(char* in_name, char* out_name)
         fclose(in_file);
         return;
     }
+<<<<<<< HEAD
     while ((bytes_in = fread(buf, 1, 1024, in_file)) > 0)
     {
+=======
+    while ((bytes_in = fread(buf, 1, 1024, in_file)) > 0)
+    {
+>>>>>>> 9188362 (init nll tetras)
         fwrite(buf, 1, bytes_in, out_file);
     }
     fclose(in_file);
